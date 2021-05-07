@@ -1,8 +1,5 @@
 
 
-
-#4단계 . 가장 많이 등장하는 수가 가장 적게 등장하는 수보다 몇배 더 많은지 구한다.
-
 #1단계 . 리스트에 들어있는 각 자연수의 개수를 센다.
 
 arr=[1,2,3,3,1,3,3,2,3,2]
@@ -31,3 +28,15 @@ def 최소값(arr):
     최소 = 기존값
     return 최소
 
+#4단계 . 가장 많이 등장하는 수가 가장 적게 등장하는 수보다 몇배 더 많은지 구한다.
+
+def solution(arr):
+    max_cnt=최대값(arr)
+    min_cnt=최소값(arr)
+    return max_cnt // min_cnt
+
+
+
+#Press Run button to receive output.
+ret = solution(arr)
+print("Solution: return value of the function is", ret, ".")

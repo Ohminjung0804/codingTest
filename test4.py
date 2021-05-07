@@ -8,12 +8,7 @@ arr=[1,2,3,3,1,3,3,2,3,2]
 count=[0,0,0,0]
 일=0; 이=0; 삼=0;
 for x in arr:
-    if x==1:
-        일+=1
-    elif x ==2:
-        이 +=1
-    elif x ==3:
-        삼+=1
+    count[x]+=1
 
 count[1]=일
 count[2]=이

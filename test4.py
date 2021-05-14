@@ -3,9 +3,7 @@ def solution(arr):
    right = len(arr)-1
    while @@@:
        #arr[left]과 arr[light]의 값을 서로 바꿈
-       temp=arr[left]
-       arr[left]=arr[right]
-       arr[right]=temp
+       arr[left],arr[right]=arr[right],arr[left]
 
        left += 1
        right -= 1

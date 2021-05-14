@@ -1,7 +1,7 @@
 def solution(arr):
    left = 0
    right = len(arr)-1
-   while @@@:
+   while left < len(arr)/2:
        #arr[left]과 arr[light]의 값을 서로 바꿈
        arr[left],arr[right]=arr[right],arr[left]
 
